@@ -14,17 +14,13 @@ public class FixedAction : MonoBehaviour
         
     }
 
-    public FixedAction controlActions; // Referencia al sistema Input Actions
+    public FixedAction controlActions = null; // Referencia al sistema Input Actions
     public GameObject collidedObject; // Objeto con el que colisionaste
-    public bool isColliding = false; // Verifica si hay colisión activa
 
     public void OnCollisionEnter(Collision collision)
     {
-        isColliding = true;
-        FixedJoint joint = new FixedJoint();
+        FixedJoint joint = gameObject.AddComponent<FixedJoint>();
         joint.connectedBody = collision.gameObject.GetComponent<Rigidbody>();
-        /*collidedObject = collision.gameObject; // Captura el objeto colisionado
-        Debug.Log($"Colisión detectada con: {collidedObject.name}");*/
     }
 
     /*public void OnCollisionExit(Collision collision)
