@@ -1,11 +1,12 @@
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class DuplicateObject : MonoBehaviour
 {
 
     public bool duplicable = true;
-
-    public GameObject objetoDuplicado; // Asigna el prefab del objeto duplicado
+    public GameObject objetoDuplicado;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -19,11 +20,10 @@ public class DuplicateObject : MonoBehaviour
         
     }
 
-    public void DuplicateObjctFunction()
+    public void DuplicateObjctFunction(SelectEnterEventArgs args)
     {
         if (!duplicable) return;
-        Instantiate(objetoDuplicado);
-        this.gameObject.GetComponent<DuplicateObject>().duplicable = false;
+        GameObject duplicate = Instantiate(objetoDuplicado);
     }
 
     

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8771662466125649372}
   - component: {fileID: 2858028442656104268}
   - component: {fileID: 4811428759562958919}
-  - component: {fileID: 5111307487789044999}
+  - component: {fileID: 312148939657861677}
   m_Layer: 0
   m_Name: CubeDuplicate
   m_TagString: Untagged
@@ -186,7 +186,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5111307487789044999}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: NewMonoBehaviourScript, Assembly-CSharp
         m_MethodName: DuplicateObjctFunction
         m_Mode: 1
@@ -272,7 +272,7 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
---- !u!114 &5111307487789044999
+--- !u!114 &312148939657861677
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -281,7 +281,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 6968588931821912755}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a47a17ac23f8e943af9b0fe8047cdff, type: 3}
+  m_Script: {fileID: 11500000, guid: e4984cb9930981242849007367854a5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objetoDuplicado: {fileID: 6968588931821912755}
