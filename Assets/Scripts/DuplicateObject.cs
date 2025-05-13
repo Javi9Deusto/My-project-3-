@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class DuplicateObject : MonoBehaviour
 {
     public GameObject objetoDuplicado; // Asigna el prefab del objeto duplicado
 
@@ -16,10 +16,10 @@ public class NewMonoBehaviourScript : MonoBehaviour
         
     }
 
-    public void DuplicateObjctFunction(Collider other)
+    public void DuplicateObjctFunction()
     {
-        GameObject nuevoObjeto = Instantiate(objetoDuplicado);
-        this.enabled = false;
+        Instantiate(objetoDuplicado);
+        this.gameObject.GetComponent<DuplicateObject>().enabled = false;
     }
 
     
