@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6134339269485924250}
   - component: {fileID: 8515035721716780101}
   - component: {fileID: 3111145039813510922}
-  - component: {fileID: 6644838260188942362}
+  - component: {fileID: -7018838549195293445}
   m_Layer: 0
   m_Name: SphereDuplcate
   m_TagString: Untagged
@@ -272,7 +272,7 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
---- !u!114 &6644838260188942362
+--- !u!114 &-7018838549195293445
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -284,4 +284,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a47a17ac23f8e943af9b0fe8047cdff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  duplicable: 1
   objetoDuplicado: {fileID: 5263970260731847529}
