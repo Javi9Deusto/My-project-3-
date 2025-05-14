@@ -20,7 +20,7 @@ public class DuplicateObject : MonoBehaviour
         
     }
 
-    public void DuplicateObjctFunction(SelectEnterEventArgs args)
+    public void DuplicateObjctFunction()
     {
         if (!duplicable) return;
         GameObject duplicate = Instantiate(objetoDuplicado);

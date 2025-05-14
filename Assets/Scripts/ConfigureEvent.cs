@@ -4,8 +4,8 @@ using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class ConfigureEvent : MonoBehaviour
 {
-    private void Awake()
+    public void CallDuplicate()
     {
-        GetComponent<XRGrabInteractable>().selectEntered.AddListener(FindFirstObjectByType<DuplicateObject>().DuplicateObjctFunction);
+        FindFirstObjectByType<DuplicateObject>().DuplicateObjctFunction();
     }
 }
