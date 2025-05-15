@@ -5,7 +5,6 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class DuplicateObject : MonoBehaviour
 {
 
-    public bool duplicable = true;
     public GameObject objetoDuplicado;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -22,7 +21,6 @@ public class DuplicateObject : MonoBehaviour
 
     public void DuplicateObjctFunction()
     {
-        if (!duplicable) return;
         GameObject duplicate = Instantiate(objetoDuplicado);
     }
 
