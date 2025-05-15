@@ -19,6 +19,7 @@ public class FixedAction : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
+        Debug.Log("hola");
         FixedJoint joint = gameObject.AddComponent<FixedJoint>();
         joint.connectedBody = collision.gameObject.GetComponent<Rigidbody>();
     }
