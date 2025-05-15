@@ -5,10 +5,17 @@ using UnityEngine.XR.Interaction.Toolkit.Interactables;
 public class ConfigureEvent : MonoBehaviour
 {
     public bool duplicable = true;
-    public void CallDuplicate()
+    public void CallDuplicateSphere()
     {
         if (!duplicable) return;
-        FindFirstObjectByType<DuplicateObject>().DuplicateObjctFunction();
+        GameObject.Find("DuplicateSphere").GetComponent<DuplicateObject>().DuplicateObjctFunction();
+        duplicable = false;
+    }
+
+    public void CallDuplicateCube()
+    {
+        if (!duplicable) return;
+        GameObject.Find("DuplicateCube").GetComponent<DuplicateObject>().DuplicateObjctFunction();
         duplicable = false;
     }
 }

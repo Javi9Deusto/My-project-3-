@@ -188,7 +188,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 312148939657861677}
         m_TargetAssemblyTypeName: ConfigureEvent, Assembly-CSharp
-        m_MethodName: CallDuplicate
+        m_MethodName: CallDuplicateCube
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

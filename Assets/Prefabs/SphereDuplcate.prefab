@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6134339269485924250}
   - component: {fileID: 8515035721716780101}
   - component: {fileID: 3111145039813510922}
-  - component: {fileID: -7018838549195293445}
+  - component: {fileID: 7590865522472754039}
   m_Layer: 0
   m_Name: SphereDuplcate
   m_TagString: Untagged
@@ -134,7 +134,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -186,13 +186,13 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5263970260731847529}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 7590865522472754039}
+        m_TargetAssemblyTypeName: ConfigureEvent, Assembly-CSharp
+        m_MethodName: CallDuplicateSphere
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -200,7 +200,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8515035721716780101}
+        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
+        m_MethodName: set_isKinematic
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -272,7 +284,7 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
---- !u!114 &-7018838549195293445
+--- !u!114 &7590865522472754039
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -281,8 +293,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5263970260731847529}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a47a17ac23f8e943af9b0fe8047cdff, type: 3}
+  m_Script: {fileID: 11500000, guid: e4984cb9930981242849007367854a5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   duplicable: 1
-  objetoDuplicado: {fileID: 5263970260731847529}
