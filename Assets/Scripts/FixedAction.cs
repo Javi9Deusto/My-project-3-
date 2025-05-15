@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class FixedAction : MonoBehaviour
 {
+    FixedJoint joint;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -14,24 +15,22 @@ public class FixedAction : MonoBehaviour
         
     }
 
-    public FixedAction controlActions = null; // Referencia al sistema Input Actions
-    public GameObject collidedObject; // Objeto con el que colisionaste
+    public FixedAction controlActions = null; 
+    public GameObject collidedObject;
 
     public void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("hola");
-        FixedJoint joint = gameObject.AddComponent<FixedJoint>();
+        joint = gameObject.AddComponent<FixedJoint>();
         joint.connectedBody = collision.gameObject.GetComponent<Rigidbody>();
     }
 
-    /*public void OnCollisionExit(Collision collision)
+    public void OnCollisionExit(Collision collision)
     {
-        if (collision.gameObject == collidedObject)
+        joint = collision.gameObject.GetComponent<FixedJoint>();
+        if (joint != null)
         {
-            isColliding = false;
-            collidedObject = null; // Limpia el objeto colisionado
-            Debug.Log("Colisión terminada.");
+            Destroy(joint);
         }
-    }*/
+    }
 }
 
