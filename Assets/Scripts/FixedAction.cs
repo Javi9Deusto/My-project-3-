@@ -22,11 +22,20 @@ public class FixedAction : MonoBehaviour
     {
         joint = gameObject.AddComponent<FixedJoint>();
         joint.connectedBody = collision.gameObject.GetComponent<Rigidbody>();
-    }
+     }
 
-    public void OnCollisionExit(Collision collision)
+    /*public void OnCollisionExit(Collision collision)
     {
         joint = collision.gameObject.GetComponent<FixedJoint>();
+        if (joint != null)
+        {
+            Destroy(joint);
+        }
+    }*/
+
+    public void Separar()
+    {
+        //FixedJoint Djoint = joint.gameObject.GetComponent<FixedJoint>();
         if (joint != null)
         {
             Destroy(joint);

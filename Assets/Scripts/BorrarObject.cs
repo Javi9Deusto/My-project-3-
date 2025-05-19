@@ -16,6 +16,6 @@ public class BorrarObject : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        Destroy(other.gameObject); // Esto elimina el objeto con el que colisiona
+        Destroy(other.gameObject);
     }
 }
