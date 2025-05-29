@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 95153540780858475}
   m_Layer: 0
   m_Name: SphereDuplcate
-  m_TagString: Untagged
+  m_TagString: Iman
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
