@@ -5,12 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Prototipo/CanvasTry.unity
     guid: 402c9e9203ae91845a47b900a6a55f54
-  - enabled: 1
+  - enabled: 0
     path: "Assets/Scenes/Prototipo/Construcci\xF3nLibre.unity"
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: "Assets/Scenes/Aplicaci\xF3nVerdadera.unity"
+    guid: 5a80efb7baaffd446914c4538ec0b22c
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 102a5a8f419582d4fb260f11d5d910d8, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: 0760d8cdcf6a8404cb7a025db1a276a0, type: 2}
