@@ -8641,7 +8641,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &703940749
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8650,7 +8650,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 703940748}
   m_LocalRotation: {x: -0, y: 0.246389, z: -0, w: 0.969171}
-  m_LocalPosition: {x: 0, y: 0, z: -0.423}
+  m_LocalPosition: {x: 0, y: 0, z: -0.459}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8661,7 +8661,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 28.528, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.083, y: 0.2797}
+  m_AnchoredPosition: {x: 0.063, y: 0.2797}
   m_SizeDelta: {x: 0.7391, y: 0.3538}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &703940750
@@ -14434,12 +14434,28 @@ PrefabInstance:
       value: CubeDuplicate
       objectReference: {fileID: 0}
     - target: {fileID: 8771662466125649372, guid: ae7e8cd8337991747938c478be15739e, type: 3}
+      propertyPath: m_Size.x
+      value: 0.58735144
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771662466125649372, guid: ae7e8cd8337991747938c478be15739e, type: 3}
       propertyPath: m_Size.y
-      value: 0.8942789
+      value: 0.7961882
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771662466125649372, guid: ae7e8cd8337991747938c478be15739e, type: 3}
+      propertyPath: m_Size.z
+      value: 0.6629571
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771662466125649372, guid: ae7e8cd8337991747938c478be15739e, type: 3}
+      propertyPath: m_Center.x
+      value: 0.03782987
       objectReference: {fileID: 0}
     - target: {fileID: 8771662466125649372, guid: ae7e8cd8337991747938c478be15739e, type: 3}
       propertyPath: m_Center.y
-      value: -0.052860554
+      value: -0.003815206
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771662466125649372, guid: ae7e8cd8337991747938c478be15739e, type: 3}
+      propertyPath: m_Center.z
+      value: 0.029653633
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25023,7 +25039,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25789,11 +25805,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6134339269485924250, guid: aa2a796e5d305234eaf961b486873afc, type: 3}
       propertyPath: m_Radius
-      value: 0.4160365
+      value: 0.42096186
+      objectReference: {fileID: 0}
+    - target: {fileID: 6134339269485924250, guid: aa2a796e5d305234eaf961b486873afc, type: 3}
+      propertyPath: m_Center.x
+      value: -0.020041866
       objectReference: {fileID: 0}
     - target: {fileID: 6134339269485924250, guid: aa2a796e5d305234eaf961b486873afc, type: 3}
       propertyPath: m_Center.z
-      value: 0.002061524
+      value: -0.013054973
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
