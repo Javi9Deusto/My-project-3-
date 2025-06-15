@@ -24,6 +24,7 @@ public class FixedAction : MonoBehaviour
         {
             joint = gameObject.AddComponent<FixedJoint>();
             joint.connectedBody = collision.gameObject.GetComponent<Rigidbody>();
+            joint.enableCollision = true;
         }
      }
 

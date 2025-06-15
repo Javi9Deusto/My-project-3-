@@ -17,7 +17,14 @@ public class InterfazMenu : MonoBehaviour
     }
     public void onClick()
     {
-        ventanaAnterior.SetActive(false);
-        ventaPosterior.SetActive(true);
+        if (ventaPosterior == null)
+        {
+            ventanaAnterior.SetActive(false);
+        }
+        else
+        {
+            ventanaAnterior.SetActive(false);
+            ventaPosterior.SetActive(true);
+        }
     }
 }

@@ -81,7 +81,7 @@ public class CombropanteEscena : MonoBehaviour
 
         Boolean compSize = false;
         Boolean compJoints = false;
-
+        Debug.Log("1");
         if (listaTag.Length == 4)
         {
             compSize = true;
@@ -89,16 +89,24 @@ public class CombropanteEscena : MonoBehaviour
 
         foreach (GameObject tag in listaTag)
         {
-            if (tag.GetComponent<FixedJoint>().connectedBody != null )
+            FixedJoint fixedJointGO = tag.GetComponent<FixedJoint>();
+            
+            if (fixedJointGO != null)
             {
-                count++;
-                if (count > 1)
+                Rigidbody rigidbodyFixedJointGO = fixedJointGO.connectedBody;
+
+                if (rigidbodyFixedJointGO != null)
                 {
-                    break;
+                    Debug.Log("3");
+                    count++;
+                    if (count > 1)
+                    {
+                        break;
+                    }
                 }
             }
         }
-
+        Debug.Log("4");
         if (count == 1)
         {
             compJoints = true;
@@ -114,6 +122,7 @@ public class CombropanteEscena : MonoBehaviour
         }
         else if (compSize && compJoints)
         {
+            Debug.Log("FINAL");
             BotonSiguiente.SetActive(true);
             ventBien.SetActive(true);
         }
@@ -138,12 +147,18 @@ public class CombropanteEscena : MonoBehaviour
 
         foreach (GameObject tag in listaTag)
         {
-            if (tag.GetComponent<FixedJoint>().connectedBody != null)
+            FixedJoint fixedJointGO = tag.GetComponent<FixedJoint>();
+
+            if (fixedJointGO != null)
             {
-                count++;
-                if (count > 3)
+                Rigidbody rigidbodyFixedJointGO = fixedJointGO.connectedBody;
+                if (tag.GetComponent<FixedJoint>().connectedBody != null)
                 {
-                    break;
+                    count++;
+                    if (count > 3)
+                    {
+                        break;
+                    }
                 }
             }
         }
@@ -186,12 +201,18 @@ public class CombropanteEscena : MonoBehaviour
 
         foreach (GameObject tag in listaTag)
         {
-            if (tag.GetComponent<FixedJoint>().connectedBody != null)
+            FixedJoint fixedJointGO = tag.GetComponent<FixedJoint>();
+
+            if (fixedJointGO != null)
             {
-                count++;
-                if (count > 13)
+                Rigidbody rigidbodyFixedJointGO = fixedJointGO.connectedBody;
+                if (tag.GetComponent<FixedJoint>().connectedBody != null)
                 {
-                    break;
+                    count++;
+                    if (count > 13)
+                    {
+                        break;
+                    }
                 }
             }
         }
@@ -235,12 +256,18 @@ public class CombropanteEscena : MonoBehaviour
 
         foreach (GameObject tag in listaTag)
         {
-            if (tag.GetComponent<FixedJoint>().connectedBody != null)
+            FixedJoint fixedJointGO = tag.GetComponent<FixedJoint>();
+
+            if (fixedJointGO != null)
             {
-                count++;
-                if (count > 8)
+                Rigidbody rigidbodyFixedJointGO = fixedJointGO.connectedBody;
+                if (tag.GetComponent<FixedJoint>().connectedBody != null)
                 {
-                    break;
+                    count++;
+                    if (count > 8)
+                    {
+                        break;
+                    }
                 }
             }
         }
@@ -284,12 +311,18 @@ public class CombropanteEscena : MonoBehaviour
 
         foreach (GameObject tag in listaTag)
         {
-            if (tag.GetComponent<FixedJoint>().connectedBody != null)
+            FixedJoint fixedJointGO = tag.GetComponent<FixedJoint>();
+
+            if (fixedJointGO != null)
             {
-                count++;
-                if (count > 32)
+                Rigidbody rigidbodyFixedJointGO = fixedJointGO.connectedBody;
+                if (tag.GetComponent<FixedJoint>().connectedBody != null)
                 {
-                    break;
+                    count++;
+                    if (count > 32)
+                    {
+                        break;
+                    }
                 }
             }
         }
@@ -333,12 +366,18 @@ public class CombropanteEscena : MonoBehaviour
 
         foreach (GameObject tag in listaTag)
         {
-            if (tag.GetComponent<FixedJoint>().connectedBody != null)
+            FixedJoint fixedJointGO = tag.GetComponent<FixedJoint>();
+
+            if (fixedJointGO != null)
             {
-                count++;
-                if (count > 4)
+                Rigidbody rigidbodyFixedJointGO = fixedJointGO.connectedBody;
+                if (tag.GetComponent<FixedJoint>().connectedBody != null)
                 {
-                    break;
+                    count++;
+                    if (count > 4)
+                    {
+                        break;
+                    }
                 }
             }
         }
@@ -382,12 +421,18 @@ public class CombropanteEscena : MonoBehaviour
 
         foreach (GameObject tag in listaTag)
         {
-            if (tag.GetComponent<FixedJoint>().connectedBody != null)
+            FixedJoint fixedJointGO = tag.GetComponent<FixedJoint>();
+
+            if (fixedJointGO != null)
             {
-                count++;
-                if (count > 12)
+                Rigidbody rigidbodyFixedJointGO = fixedJointGO.connectedBody;
+                if (tag.GetComponent<FixedJoint>().connectedBody != null)
                 {
-                    break;
+                    count++;
+                    if (count > 12)
+                    {
+                        break;
+                    }
                 }
             }
         }
@@ -431,12 +476,18 @@ public class CombropanteEscena : MonoBehaviour
 
         foreach (GameObject tag in listaTag)
         {
-            if (tag.GetComponent<FixedJoint>().connectedBody != null)
+            FixedJoint fixedJointGO = tag.GetComponent<FixedJoint>();
+
+            if (fixedJointGO != null)
             {
-                count++;
-                if (count > 24)
+                Rigidbody rigidbodyFixedJointGO = fixedJointGO.connectedBody;
+                if (tag.GetComponent<FixedJoint>().connectedBody != null)
                 {
-                    break;
+                    count++;
+                    if (count > 24)
+                    {
+                        break;
+                    }
                 }
             }
         }
@@ -480,12 +531,18 @@ public class CombropanteEscena : MonoBehaviour
 
         foreach (GameObject tag in listaTag)
         {
-            if (tag.GetComponent<FixedJoint>().connectedBody != null)
+            FixedJoint fixedJointGO = tag.GetComponent<FixedJoint>();
+
+            if (fixedJointGO != null)
             {
-                count++;
-                if (count > 36)
+                Rigidbody rigidbodyFixedJointGO = fixedJointGO.connectedBody;
+                if (tag.GetComponent<FixedJoint>().connectedBody != null)
                 {
-                    break;
+                    count++;
+                    if (count > 36)
+                    {
+                        break;
+                    }
                 }
             }
         }
@@ -529,12 +586,18 @@ public class CombropanteEscena : MonoBehaviour
 
         foreach (GameObject tag in listaTag)
         {
-            if (tag.GetComponent<FixedJoint>().connectedBody != null)
+            FixedJoint fixedJointGO = tag.GetComponent<FixedJoint>();
+
+            if (fixedJointGO != null)
             {
-                count++;
-                if (count > 12)
+                Rigidbody rigidbodyFixedJointGO = fixedJointGO.connectedBody;
+                if (tag.GetComponent<FixedJoint>().connectedBody != null)
                 {
-                    break;
+                    count++;
+                    if (count > 12)
+                    {
+                        break;
+                    }
                 }
             }
         }
@@ -578,12 +641,18 @@ public class CombropanteEscena : MonoBehaviour
 
         foreach (GameObject tag in listaTag)
         {
-            if (tag.GetComponent<FixedJoint>().connectedBody != null)
+            FixedJoint fixedJointGO = tag.GetComponent<FixedJoint>();
+
+            if (fixedJointGO != null)
             {
-                count++;
-                if (count > 21)
+                Rigidbody rigidbodyFixedJointGO = fixedJointGO.connectedBody;
+                if (tag.GetComponent<FixedJoint>().connectedBody != null)
                 {
-                    break;
+                    count++;
+                    if (count > 21)
+                    {
+                        break;
+                    }
                 }
             }
         }
@@ -627,12 +696,18 @@ public class CombropanteEscena : MonoBehaviour
 
         foreach (GameObject tag in listaTag)
         {
-            if (tag.GetComponent<FixedJoint>().connectedBody != null)
+            FixedJoint fixedJointGO = tag.GetComponent<FixedJoint>();
+
+            if (fixedJointGO != null)
             {
-                count++;
-                if (count > 28)
+                Rigidbody rigidbodyFixedJointGO = fixedJointGO.connectedBody;
+                if (tag.GetComponent<FixedJoint>().connectedBody != null)
                 {
-                    break;
+                    count++;
+                    if (count > 28)
+                    {
+                        break;
+                    }
                 }
             }
         }
