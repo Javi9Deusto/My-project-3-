@@ -15,6 +15,7 @@ public class InterfazMenu : MonoBehaviour
     {
         
     }
+
     public void onClick()
     {
         if (ventaPosterior == null)
@@ -26,5 +27,10 @@ public class InterfazMenu : MonoBehaviour
             ventanaAnterior.SetActive(false);
             ventaPosterior.SetActive(true);
         }
+    }
+
+    public void ExitApp()
+    {
+        Application.Quit();
     }
 }
